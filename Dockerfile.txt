@@ -4,3 +4,4 @@ RUN sudo apt-get install nginx -y
 RUN service nginx start
 RUN service nginx enable
 EXPOSE 80
+CMD ["nginx","-g","daemon off;"]
